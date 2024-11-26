@@ -1,0 +1,15 @@
+#vBoxMain {
+    -fx-background-color: black;
+}
+
+.button {
+    -fx-background-color: skyblue;
+}
+
+.button:hover {
+    -fx-background-color: #4fb3e5;
+}
+
+.button:pressed {
+    -fx-background-color: #02719a;
+}

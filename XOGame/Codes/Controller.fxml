@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBoxMain" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane fx:id="mainPagePane" prefHeight="700.0" prefWidth="600.0">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="37.0" prefWidth="600.0" text="XO GAME">
+                                 <font>
+                                    <Font size="65.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="100.0" top="-100.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button fx:id="onePlayerButton" mnemonicParsing="false" onAction="#eventMainPage" prefHeight="50.0" prefWidth="200.0" text="1 Player">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="twoPlayersButton" mnemonicParsing="false" onAction="#eventMainPage" prefHeight="50.0" prefWidth="200.0" text="2 Players">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="onePlayerPane" prefHeight="700.0" prefWidth="600.0" visible="false">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
+                                 <children>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="500.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn1onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="90.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn4onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="90.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn7onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <Line endY="290.0" strokeWidth="3.0" />
+                                    <VBox alignment="CENTER" prefHeight="500.0" prefWidth="100.0">
+                                       <children>
+                                          <Button fx:id="btn2onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="100.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn5onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="100.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn8onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <Line endY="290.0" strokeWidth="3.0" />
+                                    <VBox alignment="CENTER_LEFT" prefHeight="500.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn3onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="90.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn6onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="90.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn9onePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="200.0" prefWidth="600.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="676.0">
+                                       <children>
+                                          <Label fx:id="turnLabelOnePlayer" alignment="CENTER" prefHeight="46.0" prefWidth="706.0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="104.0" prefWidth="600.0">
+                                             <children>
+                                                <Button fx:id="backToMainPageButtonOnePlayer" mnemonicParsing="false" onAction="#eventOnePlayerPage" text="Back">
+                                                   <HBox.margin>
+                                                      <Insets right="50.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="resetToOnePlayerPageButton" mnemonicParsing="false" onAction="#eventOnePlayerPage" text="Reset">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="twoPlayersPane" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="600.0" visible="false">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
+                                 <children>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="500.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn1twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="90.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn4twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="90.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn7twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <Line endY="290.0" strokeWidth="3.0" />
+                                    <VBox alignment="CENTER" prefHeight="500.0" prefWidth="100.0">
+                                       <children>
+                                          <Button fx:id="btn2twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="100.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn5twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="100.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn8twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <Line endY="290.0" strokeWidth="3.0" />
+                                    <VBox alignment="CENTER_LEFT" prefHeight="500.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn3twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="90.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn6twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                          <Line endX="90.0" strokeWidth="3.0" />
+                                          <Button fx:id="btn9twoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" prefHeight="100.0" prefWidth="100.0">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="200.0" prefWidth="600.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="676.0">
+                                       <children>
+                                          <Label fx:id="turnLabelTwoPlayers" alignment="CENTER" prefHeight="46.0" prefWidth="706.0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="104.0" prefWidth="600.0">
+                                             <children>
+                                                <Button fx:id="backToMainPageButtonTwoPlayers" mnemonicParsing="false" onAction="#eventTwoPlayersPage" text="Back">
+                                                   <HBox.margin>
+                                                      <Insets right="50.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="resetToTwoPlayersPageButton" mnemonicParsing="false" onAction="#eventTwoPlayersPage" text="Reset">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>
